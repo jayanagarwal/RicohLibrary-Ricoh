@@ -7,7 +7,10 @@
 - 👤 Abhiram M V  
 - 👤 Siddhi Muni  
 - 👤 Angela Wilson
+<<<<<<< HEAD
 
+=======
+>>>>>>> 16b158eaeb10776a53ec74a16c6734255a5db6e4
 ---
 
 ## 1️⃣ Problem Statement
