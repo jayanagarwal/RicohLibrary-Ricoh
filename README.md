@@ -49,14 +49,14 @@ Field technicians and support engineers waste significant time searching through
 
 ## 📸 System Screenshot
 
-![RicohLibrary UI](app_dashboard_v3.png)
+![RicohLibrary UI](images/app_dashboard_v3.png)
 *(The "Glass Box" dashboard showing the Agent's reasoning plan, retrieved evidence, and final grounded answer)*
 
 ---
 
 ## 4️⃣ Architecture & System Design
 
-![System Architecture](architecture.png)
+![System Architecture](images/architecture.png)
 
 <details>
 <summary>Text-based diagram (for accessibility)</summary>
@@ -276,6 +276,7 @@ RicohLibrary-Ricoh/
 │   └── main.py              # Streamlit Glass Box dashboard
 ├── data/
 │   └── *.pdf                # Ricoh product manuals (gitignored)
+├── images/                  # Screenshots and architecture diagrams
 ├── src/
 │   ├── __init__.py
 │   ├── config.py            # Centralised configuration
