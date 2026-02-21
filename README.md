@@ -1,8 +1,12 @@
 # 🚀 HackVerse 2026 | RicohLibrary
 
-**Company Track:** Ricoh Modern AI Solutions
-**Team Name:** Neural Ninjas
-**Team Members:** [Your Names Here]
+**Company Track:** Ricoh Modern AI Solutions  
+**Team Name:** Neural Ninjas  
+**Team Members:**  
+- 👤 Jayan Agarwal  
+- 👤 Abhiram M V  
+- 👤 Siddhi Muni  
+- 👤 Angela Wilson
 
 ---
 
@@ -44,26 +48,39 @@ Field technicians and support engineers waste significant time searching through
 
 ---
 
+## 📸 System Screenshot
+
+![RicohLibrary UI](app_dashboard_v3.png)
+*(The "Glass Box" dashboard showing the Agent's reasoning plan, retrieved evidence, and final grounded answer)*
+
+---
+
 ## 4️⃣ Architecture & System Design
 
+![System Architecture](architecture.png)
+
+<details>
+<summary>Text-based diagram (for accessibility)</summary>
+
 ```
-User Question
-     ↓
-┌──────────────────────────────────────────────────────────┐
+                           User Question
+                                ↓
+┌───────────────────────────────────────────────────────────┐
 │               LangGraph State Machine                     │
 │                                                           │
-│   🧠 PLANNER ──→ 📚 RETRIEVER (2-pass) ──→ ✅ VERIFIER  │
-│      ↑            │ Pass 1: sub-queries      │           │
-│      │            │ Pass 2: entity-boosted   │           │
-│      └──── (INSUFFICIENT & iter < 2) ────────┘           │
+│   🧠 PLANNER ──→ 📚 RETRIEVER (2-pass) ──→ ✅ VERIFIER   │
+│      ↑            │ Pass 1: sub-queries      │            │
+│      │            │ Pass 2: entity-boosted   │            │
+│      └──── (INSUFFICIENT & iter < 2) ────────┘            │
 │                                  │                        │
 │                          (SUFFICIENT)                     │
 │                                  ↓                        │
 │                          💬 SYNTHESIZER                   │
-└──────────────────────────────────────────────────────────┘
-     ↓
-Cited Answer + Glass Box Visualisation
+└───────────────────────────────────────────────────────────┘
+                                ↓
+                 Cited Answer + Glass Box Visualisation
 ```
+</details>
 
 ### Pipeline Components
 

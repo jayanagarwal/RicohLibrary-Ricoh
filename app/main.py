@@ -173,8 +173,6 @@ def init_session() -> None:
         st.session_state.messages = []
     if "retriever_ready" not in st.session_state:
         st.session_state.retriever_ready = False
-    if "total_queries" not in st.session_state:
-        st.session_state.total_queries = 0
 
 init_session()
 
@@ -320,20 +318,11 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
 
-    st.markdown(
-        f'<div class="stat-pill">'
-        f'<div class="label">Queries This Session</div>'
-        f'<div class="value">{st.session_state.total_queries}</div>'
-        f"</div>",
-        unsafe_allow_html=True,
-    )
-
     st.divider()
 
     # ── Reset button ──
     if st.button("🗑️ Reset Chat", use_container_width=True):
         st.session_state.messages = []
-        st.session_state.total_queries = 0
         st.rerun()
 
     st.divider()
@@ -405,4 +394,3 @@ if user_input := st.chat_input("Ask a Ricoh technical support question..."):
             "latency": latency,
         }
     )
-    st.session_state.total_queries += 1
