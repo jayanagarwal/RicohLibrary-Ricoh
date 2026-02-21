@@ -44,6 +44,10 @@ data/*
 chroma_db/
 .chroma/
 
+# ---------- BM25 serialised index ----------
+bm25_index.pkl
+bm25_chunks.pkl
+
 # ---------- Jupyter notebook checkpoints ----------
 .ipynb_checkpoints/
 

@@ -207,7 +207,7 @@ Field technicians and support engineers waste significant time searching through
 ### Setup
 ```bash
 # 1. Clone the repository
-git clone <repo-link>
+git clone https://github.com/jayanagarwal/RicohLibrary-Ricoh.git
 cd RicohLibrary-Ricoh
 
 # 2. Create virtual environment
@@ -285,7 +285,6 @@ RicohLibrary-Ricoh/
 │   ├── llm_factory.py       # LLM provider abstraction
 │   ├── agent.py             # LangGraph agentic state machine
 │   └── evaluate.py          # Evaluation pipeline (10 test questions)
-├── notebooks/               # Exploration notebooks
 ├── chroma_db/               # Persisted ChromaDB + BM25 index (gitignored)
 ├── .env                     # API keys (gitignored)
 ├── .gitignore
