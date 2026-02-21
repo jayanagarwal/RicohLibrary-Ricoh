@@ -1,9 +1,12 @@
 # 🚀 HackVerse 2026 | RicohLibrary
 
-**Company Track:** Ricoh Modern AI Solutions
-**Team Name:** Neural Ninjas
-**Team Members:** [Your Names Here]
-
+**Company Track:** Ricoh Modern AI Solutions  
+**Team Name:** Neural Ninjas  
+**Team Members:**  
+- 👤 Jayan Agarwal  
+- 👤 Abhiram M V  
+- 👤 Siddhi Muni  
+- 👤 Angela Wilson
 ---
 
 ## 1️⃣ Problem Statement
